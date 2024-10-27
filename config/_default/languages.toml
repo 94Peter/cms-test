@@ -2,5 +2,11 @@
 [en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content/en"
+weight = 2
+################ Chinese language ##################
+[zh-TW]
+languageName = "zh-TW"
+languageCode = "zh-TW"
+contentDir = "content/zh-TW"
 weight = 1
