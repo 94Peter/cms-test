@@ -1,0 +1,14 @@
+name: Test deployment
+on:
+  pull_request_review:
+    types:
+      - submitted
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Stage
+      uses: Page Deploy Hook
+      with:
+        url: ${{ secrets.DEPLOY_URL }}
+        method: 'POST'
